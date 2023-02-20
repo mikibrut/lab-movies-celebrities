@@ -1,0 +1,10 @@
+<h1>This is the movies page</h1>
+<a href="/movies/create">Add a movie to our list</a>
+{{#each movies}}
+    <div class="celebrity-card">
+        <h3>{{this.title}}</h3>
+        <a href="/movies/details/{{this._id}}">See details</a>
+        <a href="/movies/delete/{{this._id}}">Delete movie</a>
+        <a href="/movies/edit/{{this._id}}">Edit movie</a>
+    </div>
+{{/each}}

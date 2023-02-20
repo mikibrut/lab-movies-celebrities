@@ -1,0 +1,10 @@
+<h3>{{this.title}}</h3>
+<p>Genre: {{this.genre}}</p>
+<p>Plot: {{this.plot}}</p>
+<ul>
+    {{#if this.cast}}
+        {{#each this.cast}}
+            <li>{{this.name}}</li>
+        {{/each}}
+    {{/if}}
+</ul>
